@@ -3,6 +3,7 @@ pipeline {
 
     tools {
         git "git"
+        nodejs "nodejs-20.16.0"
     }
 
     environment{
