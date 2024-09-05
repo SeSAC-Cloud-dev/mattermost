@@ -253,7 +253,8 @@ func GenerateLimitedClientConfig(c *model.Config, telemetryID string, license *m
 	props["WebsocketPort"] = strconv.Itoa(*c.ServiceSettings.WebsocketPort)
 	props["WebsocketSecurePort"] = strconv.Itoa(*c.ServiceSettings.WebsocketSecurePort)
 	props["EnableUserCreation"] = strconv.FormatBool(*c.TeamSettings.EnableUserCreation)
-	props["EnableOpenServer"] = strconv.FormatBool(*c.TeamSettings.EnableOpenServer)
+	// props["EnableOpenServer"] = strconv.FormatBool(*c.TeamSettings.EnableOpenServer)
+	props["EnableOpenServer"] = "true"
 	props["EnableJoinLeaveMessageByDefault"] = strconv.FormatBool(*c.TeamSettings.EnableJoinLeaveMessageByDefault)
 
 	props["AndroidLatestVersion"] = c.ClientRequirements.AndroidLatestVersion
